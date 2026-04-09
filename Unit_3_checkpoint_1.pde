@@ -9,11 +9,13 @@ color blue = #44D1FA;
 color yellow = #F0EA3A;
 color pink = #FF8BD7;
 
+color selectedColor;
 
 void setup(){
   size (800,600);
   strokeWeight (3);
   stroke (black);
+  selectedColor = green;
 }
 
 void draw() {
@@ -27,11 +29,18 @@ void draw() {
   fill(yellow);
   ellipse (100,450,100,100); 
   
-  fill(green);
+  fill(selectedColor);
   rect(250,50,500,500);
+  
+  
+  
+  
+  
+  
 }
 
 void mouseReleased ()  {
- if (dist(100,100, mouse x, mouse y < 50);
-
+  if (dist(100, 50, mouseX, mouseY) < 50) {
+    selectedColor = green;
+  }
 }
